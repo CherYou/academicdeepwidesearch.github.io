@@ -719,26 +719,23 @@
               <tr>
                 <th style="text-align:left">Model</th>
                 <th>Tool</th>
-                <th>K=1</th><th>K=2</th><th>K=4</th><th>K=8</th>
+                <th>K=1</th><th>K=2</th><th>K=4</th><th>K=8</th><th>K=16</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Gemini-3-flash</td><td>Deep Search</td>
-                <td>0.020</td><td>0.039</td><td>0.078</td><td class="value-good">0.150</td>
+                <td>0.0054</td><td>0.0108</td><td>0.0215</td><td>0.0426</td><td class="value-good">0.0833</td>
               </tr>
               <tr>
                 <td>Gemini-3.1-pro</td><td>Deep Search</td>
-                <td>0.035</td><td>0.069</td><td>0.134</td><td class="value-good">0.250</td>
+                <td>0.0145</td><td>0.0288</td><td>0.0567</td><td>0.1102</td><td class="value-good">0.2083</td>
               </tr>
               <tr>
                 <td>Seed-2.0-pro</td><td>Deep Search</td>
-                <td>0.028</td><td>0.054</td><td>0.106</td><td class="value-good">0.200</td>
+                <td>0.0178</td><td>0.0353</td><td>0.0694</td><td>0.1340</td><td class="value-good">0.2500</td>
               </tr>
-              <tr>
-                <td>Minimax-m2.5</td><td>Deep Search </td>
-                <td>0.0006</td><td>0.001</td><td>0.003</td><td class="value-low">0.005</td>
-              </tr>
+
             </tbody>
           </table>
         </div>
@@ -751,26 +748,23 @@
               <tr>
                 <th style="text-align:left">Model</th>
                 <th>Tool</th>
-                <th>K=1</th><th>K=2</th><th>K=4</th><th>K=8</th>
+                <th>K=1</th><th>K=2</th><th>K=4</th><th>K=8</th><th>K=16</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Gemini-3-flash</td><td>Wide Search</td>
-                <td>0.0573</td><td>0.0764</td><td>0.0944</td><td class="value-good">0.1140</td>
+                <td>0.0501</td><td>0.0673</td><td>0.0823</td><td>0.0952</td><td class="value-good">0.1074</td>
               </tr>
               <tr>
                 <td>Gemini-3.1-pro</td><td>Wide Search</td>
-                <td>0.0617</td><td>0.0845</td><td>0.1065</td><td class="value-good">0.1287</td>
+                <td>0.0616</td><td>0.0801</td><td>0.0970</td><td>0.1124</td><td class="value-good">0.1271</td>
               </tr>
               <tr>
                 <td>Seed-2.0-pro</td><td>Wide Search</td>
-                <td>0.0632</td><td>0.0839</td><td>0.1084</td><td class="value-good">0.1376</td>
+                <td>0.0476</td><td>0.0631</td><td>0.0784</td><td>0.0942</td><td class="value-good">0.1118</td>
               </tr>
-              <tr>
-                <td>Minimax-m2.5</td><td>Wide Search</td>
-                <td>0.0034</td><td>0.0069</td><td>0.0134</td><td class="value-low">0.0225</td>
-              </tr>
+
             </tbody>
           </table>
         </div>
@@ -785,7 +779,7 @@
           </div>
         </div> -->
         <p style="font-size:0.8rem;color:var(--muted);margin-top:1rem;text-align:center">
-          Both Deep Search accuracy and Wide Search IoU improve consistently with more samples, confirming strong test-time scaling potential on ADWS.
+          Both Deep Search accuracy and Wide Search IoU improve consistently with more samples, confirming test-time scaling potential on ADWS.
         </p>
       </div>
     </div>
@@ -1008,12 +1002,12 @@
         <ul>
           <li>📝 DeepSearch test set (600 questions)</li>
           <li>📝 WideSearch test set (400 questions)</li>
-          <li>🏷️ Each entry: question, answer, arxiv_ids, topic label</li>
+          <li>🏷️ Each entry: question, answer, arxiv_ids</li>
           <li>🔗 Answers linked to paper title / arXiv ID</li>
           <li>📊 Format: JSONL, UTF-8 encoding</li>
           <li>📋 License: CC BY 4.0</li>
         </ul>
-        <a href="#" class="btn-download">⬇ Download Dataset</a>
+        <a href="https://huggingface.co/datasets/Lk123/Academic-DeepWide-Search" class="btn-download">⬇ Download Dataset</a>
       </div>
 
       <div class="dataset-card">
@@ -1026,7 +1020,7 @@
           <li>📈 Result statistics and visualization scripts</li>
           <li>📖 Detailed documentation and usage examples</li>
         </ul>
-        <a href="#" class="btn-download" style="background:var(--teal)">
+        <a href="https://github.com/CherYou/Academic-DeepWide-Search" class="btn-download" style="background:var(--teal)">
           🐙 GitHub Repository
         </a>
       </div>
@@ -1131,9 +1125,9 @@ const LB_DATA = [
 
 /* ──── E2E Systems (fixed at bottom, not ranked/sorted) ──── */
 const E2E_DATA = [
-  { name: "Alphaxiv",                 ds_acc_str: "0/10",  ds_time: 65.2,   ws_iou: 0.0247, ws_time: 102.6  },
-  { name: "GPT Deep Research",        ds_acc_str: "2/10",  ds_time: 1074.1, ws_iou: 0.0406, ws_time: 981.4  },
-  { name: "AI-studio Gemini-3.1-pro", ds_acc_str: "2/10",  ds_time: 220.8,  ws_iou: 0.0581, ws_time: 118.5  },
+  { name: "Alphaxiv",                 ds_acc_str: "0/50",  ds_time: 65.2,   ws_iou: 0.0431, ws_time: 102.6  },
+  { name: "GPT Deep Research",        ds_acc_str: "11/50",  ds_time: 1074.1, ws_iou: 0.0406, ws_time: 981.4  },
+  { name: "AI-studio Gemini-3.1-pro", ds_acc_str: "7/50",  ds_time: 220.8,  ws_iou: 0.0484, ws_time: 118.5  },
 ];
 
 const DASH = '<span class="dash">—</span>';
