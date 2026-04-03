@@ -575,7 +575,7 @@
 
   <div class="hero-btns">
     <a href="#leaderboard" class="btn btn-primary">📊 View Leaderboard</a>
-    <a href="#dataset" class="btn btn-outline">📦 Get Dataset</a>
+    <a href="https://huggingface.co/datasets/Lk123/Academic-DeepWide-Search" class="btn btn-outline">📦 Get Dataset</a>
     <a href="#overview" class="btn btn-outline">📄 Learn More</a>
   </div>
 </section>
@@ -645,7 +645,7 @@
       <!-- Thinking Mode Analysis panel -->
       <div id="exp-thinking" class="active">
         <p style="font-size:0.9rem;color:var(--muted);margin-bottom:1.5rem">
-          We compare each model under <strong>Think</strong> and <strong>NoThink</strong> modes using the same ReAct agent with the <code style="background:#f1f5f9;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.85em">deepxiv search</code> tool (max turns = 30). We report Accuracy (%) for Deep Search and IoU (%) for Wide Search. <strong>Bold</strong> indicates the better result within each model–task pair.
+          We compare each model under <strong>Think</strong> and <strong>NoThink</strong> modes using the same ReAct agent with the <code style="background:#f1f5f9;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.85em">deepxiv search</code> tool. We report Accuracy (%) for Deep Search and IoU (%) for Wide Search. <strong>Bold</strong> indicates the better result within each model–task pair.
         </p>
         <div class="exp-table-wrap">
           <table class="exp-table">
@@ -671,7 +671,7 @@
               <tr>
                 <td><span style="background:#e0f2fe;color:#0369a1;padding:0.12rem 0.45rem;border-radius:4px;font-size:0.76rem;font-weight:600">NOTHINK</span></td>
                 <td><strong>2.75</strong></td><td>236.9</td><td>14,052</td><td>15.90</td><td>14.90</td>
-                <td><strong>5.33</strong></td><td>64.7</td><td>10,969</td><td>3.12</td><td>2.12</td>
+                <td><strong>6.11</strong></td><td>64.7</td><td>15,632</td><td>4.69</td><td>3.37</td>
               </tr>
               <tr class="group-divider"><td colspan="12"></td></tr>
               <tr>
@@ -683,7 +683,7 @@
               <tr>
                 <td><span style="background:#e0f2fe;color:#0369a1;padding:0.12rem 0.45rem;border-radius:4px;font-size:0.76rem;font-weight:600">NOTHINK</span></td>
                 <td><strong>3.24</strong></td><td>166.0</td><td>8,771</td><td>6.10</td><td>5.10</td>
-                <td><strong>5.28</strong></td><td>183.4</td><td>13,230</td><td>4.14</td><td>2.79</td>
+                <td><strong>6.89</strong></td><td>181.9</td><td>13,302</td><td>4.20</td><td>2.80</td>
               </tr>
               <tr class="group-divider"><td colspan="12"></td></tr>
               <tr>
@@ -695,7 +695,7 @@
               <tr>
                 <td><span style="background:#e0f2fe;color:#0369a1;padding:0.12rem 0.45rem;border-radius:4px;font-size:0.76rem;font-weight:600">NOTHINK</span></td>
                 <td>4.21</td><td>405.7</td><td>21,575</td><td>28.80</td><td>25.80</td>
-                <td><strong>5.96</strong></td><td>206.7</td><td>25,683</td><td>6.55</td><td>4.32</td>
+                <td><strong>7.70</strong></td><td>560.5</td><td>25,038</td><td>6.25</td><td>5.00</td>
               </tr>
             </tbody>
           </table>
@@ -725,15 +725,15 @@
             <tbody>
               <tr>
                 <td>Gemini-3-flash</td><td>Deep Search</td>
-                <td>0.0054</td><td>0.0108</td><td>0.0215</td><td>0.0426</td><td class="value-good">0.0833</td>
+                <td>0.031</td><td>0.031</td><td>0.057</td><td>0.068</td><td class="value-good">0.083</td>
               </tr>
               <tr>
                 <td>Gemini-3.1-pro</td><td>Deep Search</td>
-                <td>0.0145</td><td>0.0288</td><td>0.0567</td><td>0.1102</td><td class="value-good">0.2083</td>
+                <td>0.078</td><td>0.126</td><td>0.162</td><td>0.189</td><td class="value-good">0.212</td>
               </tr>
               <tr>
-                <td>Seed-2.0-pro</td><td>Deep Search</td>
-                <td>0.0178</td><td>0.0353</td><td>0.0694</td><td>0.1340</td><td class="value-good">0.2500</td>
+                <td>Kimi-K2.5</td><td>Deep Search</td>
+                <td>0.060</td><td>0.110</td><td>0.152</td><td>0.194</td><td class="value-good">0.242</td>
               </tr>
 
             </tbody>
