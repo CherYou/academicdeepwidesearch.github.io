@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADWS — Academic DeepWide Search Benchmark</title>
+  <title>AutoResearchBench — Benchmarking AI Agents on Complex Scientific Literature Discovery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -513,11 +513,11 @@
   </style>
 </head>
 <body>
-
+  <!-- <span>·</span> Benchmarking Complex Scientific Literature Discovery -->
 <!-- ════════════ NAV ════════════ -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">ADWS <span>·</span> Academic DeepWide Search Benchmark</div>
+    <div class="nav-logo">AutoResearchBench</div> 
     <ul class="nav-links">
       <li><a href="#leaderboard">Leaderboard</a></li>
       <li><a href="#experiments">Experiments</a></li>
@@ -535,23 +535,23 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
 
-  <div class="hero-badge">🔬 High-Difficulty Academic Search Benchmark</div>
+  <div class="hero-badge">🔬 High-Difficulty Academic Research Benchmark</div>
 
   <h1 class="hero-title">
-    Academic DeepWide Search Benchmark<br/>
-    <span class="highlight">Deep Verification &amp; Wide Exploration for Academic Search</span>
+    AutoResearchBench<br/>
+    <span class="highlight">Deep Verification &amp; Wide Exploration for Academic Research</span>
   </h1>
 
   <p class="hero-subtitle">
-    Existing search benchmarks and LLM agents have achieved great success in general web search,
+    Existing research benchmarks and LLM agents have achieved great success in general web search,
     yet they fall short when entering the rigorous domain of scientific literature.
-    ADWS reframes academic search as two complementary paradigms —
-    <strong style="color:#93c5fd">Deep Search</strong> and <strong style="color:#6ee7b7">Wide Search</strong> —
+    AutoResearchBench reframes academic research as two complementary paradigms —
+    <strong style="color:#93c5fd">Deep Research</strong> and <strong style="color:#6ee7b7">Wide Research</strong> —
     pushing the limits of AI agents in real-world scientific scenarios.
   </p>
 
   <div class="hero-authors">
-    Academic DeepWide Search Benchmark Team
+    AutoResearchBench Team
   </div>
 
   <div class="hero-stats">
@@ -585,7 +585,7 @@
   <div class="container">
     <div class="section-label">LEADERBOARD</div>
     <h2 class="section-title">Model Leaderboard</h2>
-    <p class="section-desc">Sorted by DeepSearch Accuracy (descending). All results are obtained under a unified evaluation framework. Submissions are welcome.</p>
+    <p class="section-desc">Sorted by Deep Research Accuracy (descending). All results are obtained under a unified evaluation framework. Submissions are welcome.</p>
 
     <div class="lb-controls">
       <div class="lb-filter">
@@ -603,8 +603,8 @@
             <th rowspan="2" style="width:32px">#</th>
             <th rowspan="2" style="text-align:left;min-width:160px">Model / System</th>
             <th rowspan="2">Type</th>
-            <th colspan="5" style="border-bottom:1px solid #2d4a6a">Deep Search (Accuracy)</th>
-            <th colspan="5" style="border-bottom:1px solid #2d4a6a">Wide Search (IoU)</th>
+            <th colspan="5" style="border-bottom:1px solid #2d4a6a">Deep Research (Accuracy)</th>
+            <th colspan="5" style="border-bottom:1px solid #2d4a6a">Wide Research (IoU)</th>
           </tr>
           <tr class="subhead">
             <th onclick="sortLB(3)">Acc (%) ↕</th>
@@ -645,7 +645,7 @@
       <!-- Thinking Mode Analysis panel -->
       <div id="exp-thinking" class="active">
         <p style="font-size:0.9rem;color:var(--muted);margin-bottom:1.5rem">
-          We compare each model under <strong>Think</strong> and <strong>NoThink</strong> modes using the same ReAct agent with the <code style="background:#f1f5f9;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.85em">deepxiv search</code> tool. We report Accuracy (%) for Deep Search and IoU (%) for Wide Search. <strong>Bold</strong> indicates the better result within each model–task pair.
+          We compare each model under <strong>Think</strong> and <strong>NoThink</strong> modes using the same ReAct agent with the <code style="background:#f1f5f9;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.85em">deepxiv search</code> tool. We report Accuracy (%) for Deep Research and IoU (%) for Wide Research. <strong>Bold</strong> indicates the better result within each model–task pair.
         </p>
         <div class="exp-table-wrap">
           <table class="exp-table">
@@ -653,8 +653,8 @@
               <tr>
                 <th rowspan="2" style="text-align:left">Model</th>
                 <th rowspan="2">Mode</th>
-                <th colspan="5" style="border-bottom:1px solid #2d4a6a">Deep Search</th>
-                <th colspan="5" style="border-bottom:1px solid #2d4a6a">Wide Search</th>
+                <th colspan="5" style="border-bottom:1px solid #2d4a6a">Deep Research</th>
+                <th colspan="5" style="border-bottom:1px solid #2d4a6a">Wide Research</th>
               </tr>
               <tr>
                 <th>Acc (%)</th><th>Time (s)</th><th>Tokens</th><th>Turns</th><th>Calls</th>
@@ -701,18 +701,18 @@
           </table>
         </div>
         <p style="font-size:0.8rem;color:var(--muted);margin-top:0.8rem">
-          NoThink mode generally achieves better Wide Search IoU with lower latency. For Deep Search, results are mixed — Deepseek-V3.2 benefits from thinking while other models do not, suggesting that extended reasoning may help highly targeted retrieval but not broad exhaustive collection.
+          NoThink mode generally achieves better Wide Research IoU with lower latency. For Deep Research, results are mixed — Deepseek-V3.2 benefits from thinking while other models do not, suggesting that extended reasoning may help highly targeted retrieval but not broad exhaustive collection.
         </p>
       </div>
 
       <!-- Scaling panel -->
       <div id="exp-scaling">
         <p style="font-size:0.9rem;color:var(--muted);margin-bottom:1.5rem">
-          Test-time scaling with DeepXiv Search: pass@k / best@k (k=1,2,4,8), measuring the best-of-k performance upper bound across multiple independent runs for both Deep Search and Wide Search.
+          Test-time scaling with DeepXiv Search: pass@k / best@k (k=1,2,4,8), measuring the best-of-k performance upper bound across multiple independent runs for both Deep Research and Wide Research.
         </p>
 
         <!-- Deep Search scaling table -->
-        <p style="font-size:0.85rem;font-weight:600;color:var(--sapphire);margin-bottom:0.6rem">Deep Search — best@k (Accuracy)</p>
+        <p style="font-size:0.85rem;font-weight:600;color:var(--sapphire);margin-bottom:0.6rem">Deep Research — best@k (Accuracy)</p>
         <div class="exp-table-wrap" style="margin-bottom:1.5rem">
           <table class="exp-table">
             <thead>
@@ -724,15 +724,15 @@
             </thead>
             <tbody>
               <tr>
-                <td>Gemini-3-flash</td><td>Deep Search</td>
+                <td>Gemini-3-flash</td><td>Deep Research</td>
                 <td>0.031</td><td>0.031</td><td>0.057</td><td>0.068</td><td class="value-good">0.083</td>
               </tr>
               <tr>
-                <td>Gemini-3.1-pro</td><td>Deep Search</td>
+                <td>Gemini-3.1-pro</td><td>Deep Research</td>
                 <td>0.078</td><td>0.126</td><td>0.162</td><td>0.189</td><td class="value-good">0.212</td>
               </tr>
               <tr>
-                <td>Kimi-K2.5</td><td>Deep Search</td>
+                <td>Kimi-K2.5</td><td>Deep Research</td>
                 <td>0.060</td><td>0.110</td><td>0.152</td><td>0.194</td><td class="value-good">0.242</td>
               </tr>
 
@@ -741,7 +741,7 @@
         </div>
 
         <!-- Wide Search scaling table -->
-        <p style="font-size:0.85rem;font-weight:600;color:var(--teal);margin-bottom:0.6rem">Wide Search — Max_IoU@k</p>
+        <p style="font-size:0.85rem;font-weight:600;color:var(--teal);margin-bottom:0.6rem">Wide Research — Max_IoU@k</p>
         <div class="exp-table-wrap" style="margin-bottom:1.8rem">
           <table class="exp-table">
             <thead>
@@ -753,15 +753,15 @@
             </thead>
             <tbody>
               <tr>
-                <td>Gemini-3-flash</td><td>Wide Search</td>
+                <td>Gemini-3-flash</td><td>Wide Research</td>
                 <td>0.0501</td><td>0.0673</td><td>0.0823</td><td>0.0952</td><td class="value-good">0.1074</td>
               </tr>
               <tr>
-                <td>Gemini-3.1-pro</td><td>Wide Search</td>
+                <td>Gemini-3.1-pro</td><td>Wide Research</td>
                 <td>0.0616</td><td>0.0801</td><td>0.0970</td><td>0.1124</td><td class="value-good">0.1271</td>
               </tr>
               <tr>
-                <td>Seed-2.0-pro</td><td>Wide Search</td>
+                <td>Seed-2.0-pro</td><td>Wide Research</td>
                 <td>0.0476</td><td>0.0631</td><td>0.0784</td><td>0.0942</td><td class="value-good">0.1118</td>
               </tr>
 
@@ -779,7 +779,7 @@
           </div>
         </div> -->
         <p style="font-size:0.8rem;color:var(--muted);margin-top:1rem;text-align:center">
-          Both Deep Search accuracy and Wide Search IoU improve consistently with more samples, confirming test-time scaling potential on ADWS.
+          Both Deep Research accuracy and Wide Research IoU improve consistently with more samples, confirming test-time scaling potential on AutoResearchBench.
         </p>
       </div>
     </div>
@@ -802,23 +802,26 @@
           values and nuanced details deep within papers.
         </p>
         <p>
-          <strong>Academic DeepWide Search Benchmark (ADWS)</strong> is the first benchmark specifically designed to
+          <strong>AutoResearchBench</strong> is a benchmark specifically designed to
           bridge the gap between existing evaluations and real-world scientific research scenarios.
-          ADWS contains 1,000 carefully curated questions spanning multiple CS research areas across 195
+          AutoResearchBench contains 1,000 carefully curated questions spanning multiple CS research areas across 195
           fine-grained research topics. All answers must be rigorously verified against real academic
-          literature, covering over 10,000 papers.
+          literature, covering over 50,000 papers.
         </p>
         <p>
-          ADWS reformulates academic search into two complementary core paradigms, separately challenging
-          an agent's <strong>deep reasoning ability</strong> and <strong>broad search coverage</strong>,
-          providing a comprehensive evaluation of real scientific research workflows.
+          AutoResearchBench reformulates academic research into two complementary core paradigms, separately challenging
+          an agent's <strong>deep reasoning ability</strong> and <strong>broad research coverage</strong>. Compared to previous benchmarks on 
+          agentic web browsing, AutoResearchBench is distinguished along three dimensions: it is <strong>research-oriented</strong>, 
+          calling for in-depth comprehension of scientific concepts; <strong>literature-focused</strong>, 
+          demanding fine-grained utilization of detailed information; and <strong>open-ended</strong>, 
+          involving an unknown number of qualified papers and thus requiring deliberate reasoning and search throughout. 
         </p>
       </div>
 
       <div class="paradigm-cards">
         <div class="paradigm-card deep">
           <div class="paradigm-icon">🔍</div>
-          <div class="paradigm-name">Deep Search — Precise Verification</div>
+          <div class="paradigm-name">Deep Research — Precise  Verification</div>
           <p class="paradigm-desc">
             Given a research method or experimental setting, the agent must precisely locate and confirm
             specific numerical results, experimental details, or method comparisons within a vast body of literature.
@@ -833,7 +836,7 @@
 
         <div class="paradigm-card wide">
           <div class="paradigm-icon">🌐</div>
-          <div class="paradigm-name">Wide Search — Exhaustive Collection</div>
+          <div class="paradigm-name">Wide Research — Exhaustive Collection</div>
           <p class="paradigm-desc">
             Given a research domain and attribute dimensions, the agent must systematically collect all
             qualifying papers and organize them into a structured table.
@@ -855,7 +858,7 @@
   <div class="container">
     <div class="section-label">BENCHMARK FEATURES</div>
     <h2 class="section-title">Key Features</h2>
-    <p class="section-desc">ADWS is designed around six core principles to ensure authenticity, reproducibility, and scientific rigor in evaluation.</p>
+    <p class="section-desc">AutoResearchBench is designed around six core principles to ensure authenticity, reproducibility, and scientific rigor in evaluation.</p>
 
     <div class="features-grid" style="margin-top:2.5rem">
       <div class="feature-card">
@@ -866,7 +869,7 @@
       <div class="feature-card">
         <div class="feature-icon" style="background:#dcfce7">🎯</div>
         <div class="feature-title">Dual-Paradigm Evaluation</div>
-        <p class="feature-desc">Deep Search tests precise localization and reasoning; Wide Search tests systematic coverage and organization. Together they provide a complete picture of academic search capability.</p>
+        <p class="feature-desc">Deep Research tests precise localization and reasoning; Wide Research tests systematic coverage and organization. Together they provide a complete picture of academic search capability.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background:#fef3c7">⚖️</div>
@@ -876,7 +879,7 @@
       <div class="feature-card">
         <div class="feature-icon" style="background:#fce7f3">🏆</div>
         <div class="feature-title">Genuinely Challenging</div>
-        <p class="feature-desc">The best current models achieve well below 20% accuracy on Deep Search and below 0.15 IoU on Wide Search, fully testing model upper bounds and preventing ceiling effects.</p>
+        <p class="feature-desc">The best current models achieve well below 20% accuracy on Deep Research and below 0.15 IoU on Wide Research, fully testing model upper bounds and preventing ceiling effects.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background:#ede9fe">🌍</div>
@@ -886,7 +889,7 @@
       <div class="feature-card">
         <div class="feature-icon" style="background:#ecfdf5">🔬</div>
         <div class="feature-title">Rigorous Annotation Pipeline</div>
-        <p class="feature-desc">Every question undergoes human annotation and cross-validation. Deep Search clues are extracted from exact paper values; Wide Search answer sets are confirmed through multiple verification rounds.</p>
+        <p class="feature-desc">Every question undergoes human annotation and cross-validation. Deep Research clues are extracted from exact paper values; Wide Research answer sets are confirmed through multiple verification rounds.</p>
       </div>
     </div>
   </div>
@@ -897,7 +900,7 @@
   <div class="container">
     <div class="section-label">BENCHMARK STATISTICS</div>
     <h2 class="section-title">Dataset Statistics</h2>
-    <p class="section-desc">ADWS contains 1,000 questions spanning 195 research topics across 8+ major categories, with answers verified against over 10,000 academic papers.</p>
+    <p class="section-desc">AutoResearchBench contains 1,000 questions spanning 195 research topics across 8+ major categories, with answers verified against over 10,000 academic papers.</p>
 
     <div class="stats-overview">
       <div class="stats-num-card">
@@ -921,7 +924,7 @@
     <!-- Sub-stats -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem">
       <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1.5rem">
-        <div style="font-size:0.75rem;color:#1d4ed8;font-weight:600;letter-spacing:0.1em;margin-bottom:0.8rem">DEEP SEARCH</div>
+        <div style="font-size:0.75rem;color:#1d4ed8;font-weight:600;letter-spacing:0.1em;margin-bottom:0.8rem">DEEP RESEARCH</div>
         <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem">
           <span style="font-size:0.88rem;color:#374151">Questions</span>
           <strong style="color:#1e40af">600</strong>
@@ -940,7 +943,7 @@
         </div>
       </div>
       <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1.5rem">
-        <div style="font-size:0.75rem;color:#15803d;font-weight:600;letter-spacing:0.1em;margin-bottom:0.8rem">WIDE SEARCH</div>
+        <div style="font-size:0.75rem;color:#15803d;font-weight:600;letter-spacing:0.1em;margin-bottom:0.8rem">WIDE RESEARCH</div>
         <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem">
           <span style="font-size:0.88rem;color:#374151">Questions</span>
           <strong style="color:#15803d">400</strong>
@@ -970,7 +973,7 @@
     <div class="chart-panels">
       <div id="chart-cat" class="active">
         <img src="fig1_category_distribution.png" alt="Category Distribution" class="chart-img" onclick="openModal(this.src)" />
-        <p class="chart-note">Question count distribution by category for DeepSearch (n=602) and WideSearch (n=400). Click to enlarge.</p>
+        <p class="chart-note">Question count distribution by category for DeepResearch (n=602) and WideResearch (n=400). Click to enlarge.</p>
       </div>
       <!-- <div id="chart-topic">
         <img src="fig2_widesearch_topic_distribution.png" alt="WideSearch Topic Distribution" class="chart-img" onclick="openModal(this.src)" />
@@ -978,7 +981,7 @@
       </div> -->
       <div id="chart-compare">
         <img src="fig4_category_comparison.png" alt="Category Comparison" class="chart-img" onclick="openModal(this.src)" />
-        <p class="chart-note">Normalized percentage comparison of category distributions between DeepSearch and WideSearch.</p>
+        <p class="chart-note">Normalized percentage comparison of category distributions between DeepResearch and WideResearch.</p>
       </div>
       <!-- <div id="chart-heatmap">
         <img src="fig5_widesearch_topic_category_heatmap.png" alt="Topic × Category Heatmap" class="chart-img" onclick="openModal(this.src)" />
@@ -994,14 +997,14 @@
   <div class="container">
     <div class="section-label">DATASET &amp; CODE</div>
     <h2 class="section-title">Dataset &amp; Code</h2>
-    <p class="section-desc">The ADWS dataset and evaluation code are fully open. Community use and contributions are welcome.</p>
+    <p class="section-desc">The AutoResearchBench dataset and evaluation code are fully open. Community use and contributions are welcome.</p>
 
     <div class="dataset-grid">
       <div class="dataset-card">
         <h3>📦 Dataset Info</h3>
         <ul>
-          <li>📝 DeepSearch test set (600 questions)</li>
-          <li>📝 WideSearch test set (400 questions)</li>
+          <li>📝 DeepResearch test set (600 questions)</li>
+          <li>📝 WideResearch test set (400 questions)</li>
           <li>🏷️ Each entry: question, answer, arxiv_ids</li>
           <li>🔗 Answers linked to paper title / arXiv ID</li>
           <li>📊 Format: JSONL, UTF-8 encoding</li>
@@ -1050,9 +1053,8 @@
     <div class="citation-box">
       <button class="copy-btn" onclick="copyCitation()">Copy</button>
 <pre id="citation-text">@misc{asab2026academicsearchagentbenchmark,
-  title   = {Academic DeepWide Search Benchmark: A High-Difficulty Benchmark for
-             Academic Search with Deep Verification and Wide Exploration},
-  author  = {ADWS Team},
+  title   = {AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery},
+  author  = {AutoResearchBench Team},
   year    = {2026},
   eprint  = {xxxx.xxxxx},
   archivePrefix = {arXiv},
@@ -1065,7 +1067,7 @@
 
 <!-- ════════════ FOOTER ════════════ -->
 <footer>
-  <p>Academic DeepWide Search Benchmark (ADWS) © 2026 · Released under
+  <p>AutoResearchBench © 2026 · Released under
     <a href="https://creativecommons.org/licenses/by/4.0/" style="color:#475569">CC BY 4.0</a>
   </p>
 </footer>
